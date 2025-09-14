@@ -1,0 +1,1171 @@
+"CREATE TABLE public.admission (
+    id bigint NOT NULL,
+    admission_date timestamp without time zone,
+    course_id bigint,
+    first_name text,
+    last_name text,
+    dob date,
+    gender text,
+    email text,
+    phone_no text,
+    address text,
+    city_name text,
+    state_id bigint,
+    country_id bigint,
+    zip_code text,
+    highschoolname text,
+    highschoolpercentage numeric,
+    highersschoolname text,
+    highersschoolpercentage numeric,
+    graduationname text,
+    graduationpercentage numeric,
+    tenthproof text,
+    twelthproof text,
+    graduationproof text,
+    photoidproof text,
+    photo text,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint,
+    paid_amount numeric,
+    total_fee numeric,
+    payment_mode text,
+    is_aadhar_req text,
+    is_birth_certi_req text,
+    is_tc_req text,
+    is_samagraid_req text,
+    transfer_certificate text
+);
+"
+"CREATE TABLE public.admission_clg (
+    id bigint NOT NULL,
+    company_id bigint,
+    course_id bigint,
+    district_id bigint,
+    state_id bigint,
+    country_id bigint,
+    corr_district_id bigint,
+    corr_state_id bigint,
+    corr_country_id bigint,
+    diploma_course_id bigint,
+    ug_course_id bigint,
+    pg_course_id bigint,
+    ........pg.dropped.13........ -,
+    entry_type text,
+    gender text,
+    first_name text,
+    last_name text,
+    user_name text,
+    father_name text,
+    mother_name text,
+    dob date,
+    category text,
+    address text,
+    city_name text,
+    zip_code text,
+    corr_address text,
+    corr_city_name text,
+    corr_zip_code text,
+    email text,
+    phone_no text,
+    religion text,
+    blood_group text,
+    medium text,
+    father_qualification text,
+    father_occupation text,
+    father_organisation text,
+    father_designation text,
+    father_phone_no text,
+    father_email text,
+    father_aadhaar_no text,
+    mother_qualification text,
+    mother_occupation text,
+    mother_organisation text,
+    mother_designation text,
+    mother_phone_no text,
+    mother_email text,
+    mother_aadhaar_no text,
+    student_aadhaar_no text,
+    samagra_id_no text,
+    staff_child text,
+    sibling_in_college text,
+    parents_ex_college text,
+    guardian_name text,
+    guardian_phone_no text,
+    high_school_board text,
+    high_school_year bigint,
+    high_school_roll_no text,
+    high_school_percentage numeric(5,2),
+    intermediate_board text,
+    intermediate_year bigint,
+    intermediate_roll_no text,
+    intermediate_stream text,
+    intermediate_percentage numeric(5,2),
+    diploma_college text,
+    diploma_university text,
+    diploma_registration_no text,
+    diploma_passing_year bigint,
+    diploma_cgpa numeric(5,2),
+    ug_college text,
+    ug_university text,
+    ug_registration_no text,
+    ug_passing_year bigint,
+    ug_cgpa numeric(5,2),
+    pg_college text,
+    pg_university text,
+    pg_registration_no text,
+    pg_passing_year bigint,
+    pg_cgpa numeric(5,2),
+    undertaking text,
+    transport_facility text,
+    transport_route text,
+    hostel_facility text,
+    hostel_occupancy text,
+    scholarship_student text,
+    family_samagra_id text,
+    student_pen_no text,
+    photo text,
+    aadhaar_card text,
+    other_certificate text,
+    father_aadhaar text,
+    mother_aadhaar text,
+    samagra_id text,
+    high_school_marksheet text,
+    intermediate_marksheet text,
+    diploma_marksheet text,
+    ug_marksheet text,
+    pg_marksheet text,
+    anti_ragging text,
+    student_undertaking text,
+    parents_undertaking text,
+    father_photo text,
+    mother_photo text,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    course_type_id bigint,
+    transfer_certificate text,
+    admission_date timestamp without time zone
+);
+"
+"CREATE TABLE public.admission_form (
+    id bigint NOT NULL,
+    company_id bigint,
+    course_id bigint,
+    gender text,
+    first_name text,
+    last_name text,
+    father_name text,
+    mother_name text,
+    dob date,
+    category text,
+    address text,
+    state_id bigint,
+    country_id bigint,
+    city_name text,
+    zip_code text,
+    email text,
+    phone_no text,
+    religion text,
+    blood_group text,
+    boarder_day_scholar text,
+    current_school text,
+    current_board text,
+    medium text,
+    father_qualification text,
+    father_occupation text,
+    father_organisation text,
+    father_designation text,
+    father_phone_no text,
+    father_email text,
+    mother_qualification text,
+    mother_occupation text,
+    mother_organisation text,
+    mother_designation text,
+    mother_phone_no text,
+    mother_email text,
+    student_aadhaar_no text,
+    father_aadhaar_no text,
+    mother_aadhaar_no text,
+    samagra_id_no text,
+    staff_child text,
+    sibling_in_school text,
+    parents_ex_school text,
+    guardian_name text,
+    guardian_phone_no text,
+    undertaking text,
+    iii_language text,
+    ii_language text,
+    stream text,
+    transport_facility text,
+    mess_facility text,
+    family_samagra_id text,
+    student_pen_no text,
+    photo text,
+    aadhaar_card text,
+    birth_certificate text,
+    other_certificate text,
+    father_aadhaar text,
+    mother_aadhaar text,
+    samagra_id text,
+    prev_class_marksheet text,
+    father_photo text,
+    mother_photo text,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    transfer_certificate text,
+    admission_date timestamp without time zone
+);
+"
+"CREATE TABLE public.affiliate (
+    id bigint NOT NULL,
+    first_name text,
+    last_name text,
+    ........pg.dropped.4........ -,
+    ........pg.dropped.5........ -,
+    ........pg.dropped.6........ -,
+    ........pg.dropped.7........ -,
+    address text,
+    city_name text,
+    state_id bigint,
+    country_id bigint,
+    zip_code text,
+    status text,
+    photo_id_url text,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint,
+    conversion_rate numeric,
+    created_by bigint,
+    district_id bigint
+);
+"
+"CREATE TABLE public.affiliate_payment (
+    id bigint NOT NULL,
+    affiliate_id bigint NOT NULL,
+    total_referrals bigint,
+    total_earning numeric,
+    deduction numeric,
+    amount_paid numeric NOT NULL,
+    status text,
+    payment_date timestamp without time zone,
+    remarks text,
+    created_at timestamp without time zone,
+    created_by bigint,
+    company_id bigint
+);
+"
+"CREATE TABLE public.attendance (
+    id bigint NOT NULL,
+    user_id bigint,
+    entry_type text,
+    attendance_time timestamp with time zone,
+    latitude numeric,
+    longitude numeric,
+    distance_from_office numeric,
+    is_on_campus boolean,
+    device_info text,
+    ip_address text,
+    remarks text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint,
+    ........pg.dropped.17........ -,
+    is_verified boolean,
+    device_id text
+);
+"
+"CREATE TABLE public.attendance_bulk (
+    id bigint NOT NULL,
+    user_id bigint,
+    entry_type text,
+    attendance_time timestamp with time zone,
+    latitude numeric,
+    longitude numeric,
+    distance_from_office numeric,
+    is_on_campus boolean,
+    device_info text,
+    ip_address text,
+    remarks text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint,
+    is_verified boolean,
+    is_locked boolean
+);
+"
+"CREATE TABLE public.chatbot_messages (
+    id bigint NOT NULL,
+    company_id bigint NOT NULL,
+    session_id text NOT NULL,
+    sender text,
+    text text NOT NULL,
+    created_at timestamp without time zone
+);
+"
+"CREATE TABLE public.code_projects (
+    id bigint NOT NULL,
+    course_id bigint,
+    title text NOT NULL,
+    description text,
+    source_code text,
+    status text NOT NULL,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint
+);
+"
+"CREATE TABLE public.company (
+    id bigint NOT NULL,
+    company_code text,
+    company_name text,
+    company_type text,
+    email text,
+    phone_no text,
+    address text,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.company_domain_info (
+    id bigint NOT NULL,
+    company_id bigint,
+    domain_name text,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    logo_url text,
+    logo_height integer,
+    logo_width integer
+);
+"
+"CREATE TABLE public.contact_us (
+    id bigint NOT NULL,
+    contact_name text,
+    email text,
+    phone_no text,
+    category_name text,
+    subject text,
+    message text,
+    created_at timestamp without time zone,
+    company_id bigint,
+    created_by bigint,
+    can_contacted boolean
+);
+"
+"CREATE TABLE public.country (
+    id bigint NOT NULL,
+    country_name text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint,
+    status text
+);
+"
+"CREATE TABLE public.course (
+    id bigint NOT NULL,
+    course_name text,
+    course_code text,
+    price bigint,
+    duration text,
+    ........pg.dropped.6........ -,
+    logo_url text,
+    documents_path text,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    is10threq boolean,
+    is12threq boolean,
+    isgradreq boolean,
+    ispgreq boolean,
+    isphotoidreq boolean,
+    quiz_id bigint,
+    is_paid boolean,
+    company_id bigint,
+    is_aadhar_req boolean,
+    is_birth_certi_req boolean,
+    is_tc_req boolean,
+    is_samagraid_req boolean,
+    course_type_id bigint,
+    isdiplomareq boolean,
+    prev_class_marksheet boolean
+);
+"
+"CREATE TABLE public.course_enrollment (
+    id bigint NOT NULL,
+    student_id bigint NOT NULL,
+    course_id bigint NOT NULL,
+    enrollment_date timestamp without time zone,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.coursetype (
+    id bigint NOT NULL,
+    company_id bigint,
+    course_type_name text NOT NULL,
+    code text,
+    status text,
+    created_by bigint,
+    created_at timestamp with time zone,
+    modified_by bigint,
+    modified_at timestamp with time zone,
+    group_id bigint
+);
+"
+"CREATE TABLE public.coursetypeold (
+    id bigint,
+    company_id bigint,
+    course_type_name text,
+    code text,
+    status text,
+    created_by bigint,
+    created_at timestamp with time zone,
+    modified_by bigint,
+    modified_at timestamp with time zone,
+    group_id bigint
+);
+"
+"CREATE TABLE public.currency (
+    id bigint NOT NULL,
+    company_id bigint,
+    currency_code text,
+    currency_name text,
+    currency_symbol text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    status text
+);
+"
+"CREATE TABLE public.district (
+    id bigint NOT NULL,
+    district_name text,
+    state_id bigint NOT NULL,
+    company_id bigint,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.email_otps (
+    id bigint NOT NULL,
+    email_id bigint,
+    to_address text NOT NULL,
+    otp text NOT NULL,
+    purpose text,
+    is_verified boolean,
+    verified_at timestamp without time zone,
+    expires_at timestamp without time zone NOT NULL,
+    created_at timestamp without time zone,
+    company_id bigint,
+    status text NOT NULL
+);
+"
+"CREATE TABLE public.email_template (
+    id bigint NOT NULL,
+    email_template_name text,
+    email_template_body text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint,
+    status text
+);
+"
+"CREATE TABLE public.emails (
+    id bigint NOT NULL,
+    to_address text NOT NULL,
+    subject text,
+    body text,
+    otp text,
+    template_name text,
+    attachment_path text,
+    status text NOT NULL,
+    retry_count integer NOT NULL,
+    sent_at timestamp without time zone,
+    created_at timestamp without time zone,
+    company_id bigint
+);
+"
+"CREATE TABLE public.employee (
+    id bigint NOT NULL,
+    first_name text NOT NULL,
+    last_name text,
+    user_name text NOT NULL,
+    emp_code text NOT NULL,
+    joining_date timestamp without time zone,
+    dob date,
+    department_type text,
+    qualification text,
+    experience numeric,
+    designation text,
+    salary numeric,
+    gender text,
+    email text NOT NULL,
+    phone_no text,
+    marital_status text,
+    father_name text,
+    mother_name text,
+    husband_wife_name text,
+    address text,
+    aadhaar_no text,
+    pan_card text,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint,
+    photo text,
+    photoidproof text
+);
+"
+"CREATE TABLE public.enrollments (
+    id bigint NOT NULL,
+    user_id bigint NOT NULL,
+    course_id bigint NOT NULL,
+    company_id bigint,
+    enrollment_date timestamp with time zone,
+    end_date timestamp with time zone,
+    paid_amount numeric,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.enrollments_new (
+    id bigint NOT NULL,
+    learner_id bigint NOT NULL,
+    course_id bigint NOT NULL,
+    company_id bigint,
+    enrollment_date timestamp with time zone,
+    end_date timestamp with time zone,
+    paid_amount numeric,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.event (
+    id bigint NOT NULL,
+    event_name text,
+    start_date_time timestamp without time zone,
+    end_date_time timestamp without time zone,
+    budget numeric,
+    description text,
+    assigned_to bigint,
+    email_template_id bigint,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    currency_id bigint,
+    location_id bigint,
+    company_id bigint,
+    status text
+);
+"
+"CREATE TABLE public.fee_collections (
+    id bigint NOT NULL,
+    company_id bigint NOT NULL,
+    course_id bigint,
+    learner_id bigint,
+    payment_date timestamp with time zone,
+    payment_mode text,
+    cheque_number text,
+    fee_amount numeric(12,2),
+    status text,
+    student_name text,
+    course_name text,
+    created_by bigint NOT NULL,
+    created_at timestamp with time zone NOT NULL,
+    modified_by bigint,
+    modified_at timestamp with time zone,
+    payment_type text,
+    remarks text
+);
+"
+"CREATE TABLE public.fee_payment (
+    id bigint NOT NULL,
+    payment_id bigint,
+    admission_id bigint,
+    course_id bigint,
+    frequency text,
+    amount numeric,
+    payment_date timestamp without time zone,
+    due_date timestamp without time zone,
+    discount numeric,
+    fine_amount numeric,
+    transaction_id bigint,
+    status text,
+    company_id bigint,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    is_captured boolean,
+    razorpay_order_id text,
+    razorpay_payment_id text,
+    razorpay_signature text,
+    user_id bigint
+);
+"
+"CREATE TABLE public.fee_payment_new (
+    id bigint NOT NULL,
+    learner_id bigint NOT NULL,
+    student_fee_plan_id bigint,
+    enrollment_id bigint,
+    payment_id bigint,
+    course_id bigint,
+    frequency text,
+    amount numeric(10,2),
+    due_date date,
+    payment_date timestamp without time zone,
+    discount numeric(10,2),
+    fine_amount numeric(10,2),
+    status text,
+    is_captured boolean,
+    razorpay_order_id text,
+    razorpay_payment_id text,
+    razorpay_signature text,
+    company_id bigint,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.group (
+    id bigint NOT NULL,
+    group_name text NOT NULL,
+    status text,
+    company_id bigint,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.location (
+    id bigint NOT NULL,
+    location_name text,
+    description text,
+    capacity bigint,
+    address text,
+    city_name text,
+    state_id bigint,
+    country_id bigint,
+    zip_code text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    ........pg.dropped.14........ -,
+    ........pg.dropped.15........ -,
+    company_id bigint,
+    status text
+);
+"
+"CREATE TABLE public.logs (
+    id bigint NOT NULL,
+    user_id bigint NOT NULL,
+    company_id bigint NOT NULL,
+    device_id text NOT NULL,
+    device_info text,
+    ip_address text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.meeting (
+    id bigint NOT NULL,
+    company_id bigint,
+    subject text,
+    start_date_time timestamp without time zone,
+    end_date_time timestamp without time zone,
+    location_id bigint,
+    reminder text,
+    description text,
+    parent_type text,
+    parent_type_id bigint,
+    assigned_to bigint,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.module (
+    id bigint NOT NULL,
+    module_name text NOT NULL,
+    code text,
+    status text,
+    created_by bigint,
+    created_at timestamp with time zone,
+    modified_by bigint,
+    modified_at timestamp with time zone,
+    company_id bigint
+);
+"
+"CREATE TABLE public.option (
+    id bigint NOT NULL,
+    option_code bigint NOT NULL,
+    option_name text,
+    module_id bigint,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint,
+    status text
+);
+"
+"CREATE TABLE public.pay_receipt (
+    id bigint NOT NULL,
+    company_id bigint,
+    payment_id bigint,
+    learner_id bigint,
+    course_id bigint,
+    receipt_number text,
+    amount_paid numeric(10,2),
+    payment_mode text,
+    payment_date date,
+    generated_by bigint,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.payment (
+    id bigint NOT NULL,
+    user_id bigint,
+    payee_name text,
+    amount numeric,
+    currency text,
+    receipt text,
+    payment_method text,
+    transaction_id text,
+    is_captured boolean,
+    status text,
+    razorpay_order_id text,
+    razorpay_payment_id text,
+    razorpay_signature text,
+    created_at timestamp without time zone,
+    company_id bigint
+);
+"
+"CREATE TABLE public.payment_new (
+    id bigint NOT NULL,
+    learner_id bigint,
+    amount numeric(10,2),
+    currency text,
+    payment_method text,
+    transaction_id text,
+    status text,
+    is_captured boolean,
+    razorpay_order_id text,
+    razorpay_payment_id text,
+    razorpay_signature text,
+    paid_by_admin boolean,
+    collected_by bigint,
+    company_id bigint,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.payment_receipts (
+    id bigint NOT NULL,
+    company_id bigint,
+    admission_no text NOT NULL,
+    admission_date timestamp without time zone NOT NULL,
+    student_name text NOT NULL,
+    course_name text NOT NULL,
+    amount_paid numeric(10,2) NOT NULL,
+    payment_mode text,
+    payment_date date NOT NULL,
+    email text,
+    phone_no text,
+    address text,
+    site_url text,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.question_options (
+    id bigint NOT NULL,
+    question_id bigint NOT NULL,
+    option_text text,
+    is_correct boolean,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    explanation text,
+    quiz_id bigint,
+    company_id bigint
+);
+"
+"CREATE TABLE public.quiz (
+    id bigint NOT NULL,
+    quiz_name text,
+    quiz_code text,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    course_id bigint,
+    company_id bigint,
+    quiz_type text,
+    exam_duration integer
+);
+"
+"CREATE TABLE public.quiz_questions (
+    id bigint NOT NULL,
+    quiz_id bigint NOT NULL,
+    question text,
+    ........pg.dropped.4........ -,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint
+);
+"
+"CREATE TABLE public.quiz_results (
+    id bigint NOT NULL,
+    student_id bigint NOT NULL,
+    course_id bigint NOT NULL,
+    quiz_id bigint NOT NULL,
+    total_questions integer NOT NULL,
+    attempted_questions integer NOT NULL,
+    unattempted_questions integer NOT NULL,
+    correct_answers integer NOT NULL,
+    wrong_answers integer NOT NULL,
+    percentage numeric(5,2),
+    time_taken_seconds integer NOT NULL,
+    passed boolean NOT NULL,
+    attempt_timestamp timestamp with time zone,
+    created_by bigint,
+    created_at timestamp without time zone,
+    company_id bigint NOT NULL
+);
+"
+"CREATE TABLE public.referral (
+    id bigint NOT NULL,
+    company_id bigint NOT NULL,
+    referral_company_name text NOT NULL,
+    referral_date timestamp with time zone,
+    contact_person text NOT NULL,
+    mobile_no text NOT NULL,
+    email text NOT NULL,
+    address text,
+    product_interest text,
+    requirement text,
+    is_paid boolean NOT NULL,
+    status text NOT NULL,
+    referred_by bigint NOT NULL,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    amount_paid numeric(12,2),
+    received_amount numeric(12,2)
+);
+"
+"CREATE TABLE public.referral_payments (
+    id bigint NOT NULL,
+    referral_id bigint NOT NULL,
+    affiliate_id bigint NOT NULL,
+    amount numeric(10,2) NOT NULL,
+    payment_date timestamp without time zone,
+    payment_mode text,
+    remarks text,
+    company_id bigint
+);
+"
+"CREATE TABLE public.referral_status_history (
+    id bigint NOT NULL,
+    company_id bigint NOT NULL,
+    referral_id bigint NOT NULL,
+    old_status text,
+    new_status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.role (
+    id bigint NOT NULL,
+    role_name text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint,
+    status text,
+    type_id bigint
+);
+"
+"CREATE TABLE public.role_module_mapping (
+    id bigint NOT NULL,
+    company_id bigint,
+    module_id bigint,
+    role_id text,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.role_permission (
+    id bigint NOT NULL,
+    role_id bigint,
+    option_id bigint,
+    grant boolean,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint
+);
+"
+"CREATE TABLE public.site_config (
+    id bigint NOT NULL,
+    company_id bigint,
+    key text,
+    value text,
+    type text,
+    description text,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    business_config text
+);
+"
+"CREATE TABLE public.state (
+    id bigint NOT NULL,
+    state_name text,
+    state_code text,
+    country_id bigint,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint,
+    status text
+);
+"
+"CREATE TABLE public.student_fee_components (
+    id bigint NOT NULL,
+    fee_plan_id bigint,
+    component_name text NOT NULL,
+    component_amount numeric(10,2) NOT NULL
+);
+"
+"CREATE TABLE public.student_fee_payment_log (
+    id bigint NOT NULL,
+    fee_breakup_id bigint,
+    paid_amount numeric(10,2) NOT NULL,
+    paid_on date NOT NULL,
+    payment_mode text,
+    receipt_number text,
+    created_by bigint,
+    created_at timestamp without time zone
+);
+"
+"CREATE TABLE public.student_fee_plan (
+    id bigint NOT NULL,
+    learner_id bigint NOT NULL,
+    course_id bigint NOT NULL,
+    start_date text NOT NULL,
+    total_amount numeric(10,2) NOT NULL,
+    discount numeric(10,2),
+    fine_amount numeric(10,2),
+    status text,
+    company_id bigint NOT NULL,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    payment_frequency text,
+    net_amount numeric(10,2)
+);
+"
+"CREATE TABLE public.student_fees_breakup (
+    id bigint NOT NULL,
+    company_id bigint NOT NULL,
+    admission_id bigint NOT NULL,
+    course_id bigint NOT NULL,
+    fee_plan_id bigint NOT NULL,
+    ........pg.dropped.6........ -,
+    fee_cycle_code text,
+    fee_year integer,
+    fee_component text NOT NULL,
+    amount numeric(10,2) NOT NULL,
+    is_paid boolean,
+    paid_on date,
+    payment_mode text,
+    receipt_number text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.student_monthly_fees (
+    id bigint NOT NULL,
+    company_id bigint NOT NULL,
+    admission_id bigint NOT NULL,
+    course_id bigint NOT NULL,
+    fee_frequency text NOT NULL,
+    fee_month integer NOT NULL,
+    fee_year integer NOT NULL,
+    fee_amount numeric NOT NULL,
+    is_paid boolean,
+    paid_on date,
+    payment_mode text,
+    receipt_number text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.study_notes (
+    id bigint NOT NULL,
+    course_id bigint,
+    title text,
+    description text,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint
+);
+"
+"CREATE TABLE public.type (
+    id bigint NOT NULL,
+    type_name text NOT NULL,
+    status text,
+    company_id bigint,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.user (
+    id bigint NOT NULL,
+    first_name text,
+    last_name text,
+    email text,
+    mobile_no text,
+    user_name text,
+    password text,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    role_id bigint,
+    image_url text,
+    code text,
+    company_id bigint,
+    affiliate_id bigint,
+    type text,
+    type_id bigint
+);
+"
+"CREATE TABLE public.user_device_mapping (
+    id bigint NOT NULL,
+    user_id bigint,
+    device_id text,
+    company_id bigint,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    device_info text,
+    status text,
+    remarks text
+);
+"
+"CREATE TABLE public.user_permission (
+    id bigint NOT NULL,
+    user_id bigint,
+    option_id bigint,
+    grant boolean,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint
+);
+"
+"CREATE TABLE public.video_uploads (
+    id bigint NOT NULL,
+    course_id bigint,
+    title text,
+    video_source text,
+    description text,
+    tags text,
+    status text,
+    created_by bigint,
+    created_at timestamp without time zone,
+    modified_by bigint,
+    modified_at timestamp without time zone,
+    company_id bigint
+);
+"
