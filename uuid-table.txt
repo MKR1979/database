@@ -1,0 +1,1129 @@
+"CREATE TABLE public.admission_clg (
+    id uuid NOT NULL,
+    company_id uuid,
+    admission_no text,
+    course_id uuid,
+    district_id uuid,
+    state_id uuid,
+    country_id uuid,
+    corr_district_id uuid,
+    corr_state_id uuid,
+    corr_country_id uuid,
+    diploma_course_id uuid,
+    ug_course_id uuid,
+    pg_course_id uuid,
+    entry_type text,
+    gender text,
+    first_name text,
+    last_name text,
+    user_name text,
+    father_name text,
+    mother_name text,
+    dob date,
+    category text,
+    address text,
+    city_name text,
+    zip_code text,
+    corr_address text,
+    corr_city_name text,
+    corr_zip_code text,
+    email text,
+    phone_no text,
+    religion text,
+    blood_group text,
+    medium text,
+    father_qualification text,
+    father_occupation text,
+    father_organisation text,
+    father_designation text,
+    father_phone_no text,
+    father_email text,
+    father_aadhaar_no text,
+    mother_qualification text,
+    mother_occupation text,
+    mother_organisation text,
+    mother_designation text,
+    mother_phone_no text,
+    mother_email text,
+    mother_aadhaar_no text,
+    aadhaar_no text,
+    samagra_id_no text,
+    staff_child text,
+    sibling_in_college text,
+    parents_ex_college text,
+    guardian_name text,
+    guardian_phone_no text,
+    high_school_board text,
+    high_school_year integer,
+    high_school_roll_no text,
+    high_school_percentage numeric(5,2),
+    intermediate_board text,
+    intermediate_year integer,
+    intermediate_roll_no text,
+    intermediate_stream text,
+    intermediate_percentage numeric(5,2),
+    diploma_college text,
+    diploma_university text,
+    diploma_registration_no text,
+    diploma_passing_year integer,
+    diploma_cgpa numeric(5,2),
+    ug_college text,
+    ug_university text,
+    ug_registration_no text,
+    ug_passing_year integer,
+    ug_cgpa numeric(5,2),
+    pg_college text,
+    pg_university text,
+    pg_registration_no text,
+    pg_passing_year integer,
+    pg_cgpa numeric(5,2),
+    undertaking text,
+    transport_facility text,
+    transport_route text,
+    hostel_facility text,
+    hostel_occupancy text,
+    scholarship_student text,
+    family_samagra_id text,
+    pen_no text,
+    photo text,
+    aadhaar_card text,
+    other_certificate text,
+    father_aadhaar text,
+    mother_aadhaar text,
+    samagra_id text,
+    high_school_marksheet text,
+    intermediate_marksheet text,
+    diploma_marksheet text,
+    ug_marksheet text,
+    pg_marksheet text,
+    anti_ragging text,
+    student_undertaking text,
+    parents_undertaking text,
+    father_photo text,
+    mother_photo text,
+    status text,
+    created_by uuid,
+    created_at timestamp with time zone,
+    modified_by uuid,
+    modified_at timestamp with time zone,
+    course_type_id uuid,
+    transfer_certificate text,
+    admission_date timestamp without time zone
+);
+"
+"CREATE TABLE public.admission_sch (
+    id uuid NOT NULL,
+    company_id uuid,
+    admission_no text,
+    course_id uuid,
+    gender text,
+    first_name text,
+    last_name text,
+    father_name text,
+    mother_name text,
+    dob date,
+    category text,
+    address text,
+    state_id uuid,
+    country_id uuid,
+    city_name text,
+    zip_code text,
+    email text,
+    phone_no text,
+    religion text,
+    blood_group text,
+    boarder_day_scholar text,
+    current_school text,
+    current_board text,
+    medium text,
+    father_qualification text,
+    father_occupation text,
+    father_organisation text,
+    father_designation text,
+    father_phone_no text,
+    father_email text,
+    mother_qualification text,
+    mother_occupation text,
+    mother_organisation text,
+    mother_designation text,
+    mother_phone_no text,
+    mother_email text,
+    aadhaar_no text,
+    father_aadhaar_no text,
+    mother_aadhaar_no text,
+    samagra_id_no text,
+    staff_child text,
+    sibling_in_school text,
+    parents_ex_school text,
+    guardian_name text,
+    guardian_phone_no text,
+    undertaking text,
+    iii_language text,
+    ii_language text,
+    stream text,
+    transport_facility text,
+    mess_facility text,
+    family_samagra_id text,
+    pen_no text,
+    photo text,
+    aadhaar_card text,
+    birth_certificate text,
+    other_certificate text,
+    father_aadhaar text,
+    mother_aadhaar text,
+    samagra_id text,
+    prev_class_marksheet text,
+    father_photo text,
+    mother_photo text,
+    status text,
+    created_by uuid,
+    created_at timestamp with time zone,
+    modified_by uuid,
+    modified_at timestamp with time zone,
+    transfer_certificate text,
+    admission_date timestamp without time zone,
+    transport_route text
+);
+"
+"CREATE TABLE public.admission_tech (
+    id uuid NOT NULL,
+    admission_no text,
+    admission_date timestamp without time zone,
+    course_id uuid,
+    first_name text,
+    last_name text,
+    dob date,
+    gender text,
+    email text,
+    phone_no text,
+    address text,
+    city_name text,
+    state_id uuid,
+    country_id uuid,
+    zip_code text,
+    highschoolname text,
+    highschoolpercentage numeric,
+    highersschoolname text,
+    highersschoolpercentage numeric,
+    graduationname text,
+    graduationpercentage numeric,
+    tenthproof text,
+    twelthproof text,
+    graduationproof text,
+    photoidproof text,
+    photo text,
+    status text,
+    created_by uuid,
+    created_at timestamp with time zone,
+    modified_by uuid,
+    modified_at timestamp with time zone,
+    company_id uuid,
+    paid_amount numeric,
+    total_fee numeric,
+    payment_mode text,
+    is_aadhar_req text,
+    is_birth_certi_req text,
+    is_tc_req text,
+    is_samagraid_req text,
+    transfer_certificate text,
+    aadhaar_no text,
+    samagra_id text,
+    pen_no text,
+    father_name text,
+    father_occupation text,
+    father_phone_no text,
+    mother_name text,
+    mother_occupation text,
+    mother_phone_no text,
+    undertaking text
+);
+"
+"CREATE TABLE public.affiliate (
+    id uuid NOT NULL,
+    first_name text,
+    last_name text,
+    address text,
+    city_name text,
+    state_id uuid,
+    country_id uuid,
+    zip_code text,
+    status text,
+    photo_id_url text,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid,
+    conversion_rate numeric,
+    created_by uuid,
+    district_id uuid
+);
+"
+"CREATE TABLE public.affiliate_payment (
+    id uuid NOT NULL,
+    affiliate_id uuid NOT NULL,
+    total_referrals integer,
+    total_earning numeric,
+    deduction numeric,
+    amount_paid numeric NOT NULL,
+    status text,
+    payment_date timestamp without time zone,
+    remarks text,
+    created_at timestamp without time zone,
+    created_by uuid,
+    company_id uuid
+);
+"
+"CREATE TABLE public.attendance (
+    id uuid NOT NULL,
+    user_id uuid,
+    entry_type text,
+    attendance_time timestamp with time zone,
+    latitude numeric,
+    longitude numeric,
+    distance_from_office numeric,
+    is_on_campus boolean,
+    device_info text,
+    ip_address text,
+    remarks text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid,
+    is_verified boolean,
+    device_id text
+);
+"
+"CREATE TABLE public.attendance_bulk (
+    id uuid NOT NULL,
+    user_id uuid,
+    entry_type text,
+    attendance_time timestamp with time zone,
+    latitude numeric,
+    longitude numeric,
+    distance_from_office numeric,
+    is_on_campus boolean,
+    device_info text,
+    ip_address text,
+    remarks text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid,
+    is_verified boolean,
+    is_locked boolean
+);
+"
+"CREATE TABLE public.attendance_learner (
+    id uuid NOT NULL,
+    user_id uuid,
+    presence text,
+    attendance_time timestamp with time zone,
+    latitude numeric,
+    longitude numeric,
+    distance_from_office numeric,
+    is_on_campus boolean,
+    device_info text,
+    ip_address text,
+    remarks text,
+    created_by uuid,
+    created_at timestamp with time zone,
+    modified_by uuid,
+    modified_at timestamp with time zone,
+    company_id uuid,
+    is_verified boolean,
+    is_locked boolean
+);
+"
+"CREATE TABLE public.chatbot_messages (
+    id uuid NOT NULL,
+    company_id uuid NOT NULL,
+    session_id text NOT NULL,
+    sender text,
+    text text NOT NULL,
+    created_at timestamp without time zone
+);
+"
+"CREATE TABLE public.code_counters (
+    id uuid NOT NULL,
+    company_id uuid NOT NULL,
+    key text NOT NULL,
+    value bigint NOT NULL,
+    prefix text,
+    suffix text,
+    created_by uuid,
+    created_at timestamp with time zone,
+    modified_by uuid,
+    modified_at timestamp with time zone
+);
+"
+"CREATE TABLE public.code_projects (
+    id uuid NOT NULL,
+    course_id uuid,
+    title text NOT NULL,
+    description text,
+    source_code text,
+    status text NOT NULL,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid
+);
+"
+"CREATE TABLE public.company (
+    id uuid NOT NULL,
+    company_code text,
+    company_name text,
+    company_type text,
+    email text,
+    phone_no text,
+    address text,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    undertaking text
+);
+"
+"CREATE TABLE public.company_domain_info (
+    id uuid NOT NULL,
+    company_id uuid,
+    domain_name text,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    logo_url text,
+    logo_height integer,
+    logo_width integer,
+    home_img text,
+    about_img text
+);
+"
+"CREATE TABLE public.contact_us (
+    id uuid NOT NULL,
+    contact_name text,
+    email text,
+    phone_no text,
+    category_name text,
+    subject text,
+    message text,
+    created_at timestamp without time zone,
+    company_id uuid,
+    created_by uuid,
+    can_contacted boolean
+);
+"
+"CREATE TABLE public.country (
+    id uuid NOT NULL,
+    country_name text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid,
+    status text
+);
+"
+"CREATE TABLE public.course (
+    id uuid NOT NULL,
+    course_name text,
+    course_code text,
+    price numeric(10,2),
+    duration integer,
+    logo_url text,
+    documents_path text,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    is10threq boolean,
+    is12threq boolean,
+    isgradreq boolean,
+    ispgreq boolean,
+    isphotoidreq boolean,
+    quiz_id uuid,
+    is_paid boolean,
+    company_id uuid,
+    is_aadhar_req boolean,
+    is_birth_certi_req boolean,
+    is_tc_req boolean,
+    is_samagraid_req boolean,
+    course_type_id uuid,
+    isdiplomareq boolean,
+    prev_class_marksheet boolean,
+    reg_fee numeric(10,2),
+    duration_unit text
+);
+"
+"CREATE TABLE public.course_enrollment (
+    id uuid NOT NULL,
+    student_id uuid NOT NULL,
+    course_id uuid NOT NULL,
+    enrollment_date timestamp without time zone,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.course_type (
+    id uuid NOT NULL,
+    company_id uuid,
+    course_type_name text NOT NULL,
+    code text,
+    status text,
+    created_by uuid,
+    created_at timestamp with time zone,
+    modified_by uuid,
+    modified_at timestamp with time zone,
+    group_id uuid
+);
+"
+"CREATE TABLE public.currency (
+    id uuid NOT NULL,
+    company_id uuid,
+    currency_code text,
+    currency_name text,
+    currency_symbol text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    status text
+);
+"
+"CREATE TABLE public.district (
+    id uuid NOT NULL,
+    district_name text,
+    state_id uuid NOT NULL,
+    company_id uuid,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    country_id uuid,
+    district_code text
+);
+"
+"CREATE TABLE public.email_otps (
+    id uuid NOT NULL,
+    email_id uuid,
+    to_address text NOT NULL,
+    otp text NOT NULL,
+    purpose text,
+    is_verified boolean,
+    verified_at timestamp without time zone,
+    expires_at timestamp without time zone NOT NULL,
+    created_at timestamp without time zone,
+    company_id uuid,
+    status text NOT NULL
+);
+"
+"CREATE TABLE public.email_template (
+    id uuid NOT NULL,
+    email_template_name text,
+    email_template_body text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid,
+    status text,
+    email_template_sub text
+);
+"
+"CREATE TABLE public.emails (
+    id uuid NOT NULL,
+    to_address text NOT NULL,
+    subject text,
+    body text,
+    otp text,
+    template_name text,
+    attachment_path text,
+    status text NOT NULL,
+    retry_count integer NOT NULL,
+    sent_at timestamp without time zone,
+    created_at timestamp without time zone,
+    company_id uuid
+);
+"
+"CREATE TABLE public.employee (
+    id uuid NOT NULL,
+    first_name text NOT NULL,
+    last_name text,
+    user_name text NOT NULL,
+    emp_code text NOT NULL,
+    joining_date timestamp without time zone,
+    dob date,
+    department_type text,
+    qualification text,
+    experience numeric,
+    designation text,
+    salary numeric,
+    gender text,
+    email text NOT NULL,
+    phone_no text,
+    marital_status text,
+    father_name text,
+    mother_name text,
+    husband_wife_name text,
+    address text,
+    aadhaar_no text,
+    pan_card text,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid,
+    photo text,
+    photoidproof text
+);
+"
+"CREATE TABLE public.enrollments (
+    id uuid NOT NULL,
+    user_id uuid NOT NULL,
+    course_id uuid NOT NULL,
+    company_id uuid,
+    enrollment_date timestamp with time zone,
+    end_date timestamp with time zone,
+    paid_amount numeric,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.event (
+    id uuid NOT NULL,
+    event_name text,
+    start_date_time timestamp with time zone,
+    end_date_time timestamp with time zone,
+    budget numeric,
+    description text,
+    assigned_to uuid,
+    email_template_id uuid,
+    created_by uuid,
+    created_at timestamp with time zone,
+    modified_by uuid,
+    modified_at timestamp with time zone,
+    currency_id uuid,
+    location_id uuid,
+    company_id uuid,
+    status text
+);
+"
+"CREATE TABLE public.fee_collections (
+    id uuid NOT NULL,
+    company_id uuid NOT NULL,
+    course_id uuid,
+    learner_id uuid,
+    payment_date timestamp with time zone,
+    payment_mode text,
+    cheque_number text,
+    fee_amount numeric(12,2),
+    status text,
+    created_by uuid,
+    created_at timestamp with time zone NOT NULL,
+    modified_by uuid,
+    modified_at timestamp with time zone,
+    remarks text,
+    fee_month text,
+    fee_year integer,
+    currency text,
+    transaction_id text,
+    is_captured boolean,
+    razorpay_order_id text,
+    razorpay_payment_id text,
+    razorpay_signature text,
+    fee_head_id uuid
+);
+"
+"CREATE TABLE public.fee_components (
+    id uuid NOT NULL,
+    company_id uuid NOT NULL,
+    fee_plan_id uuid NOT NULL,
+    fee_head_id uuid NOT NULL,
+    amount numeric(10,2) NOT NULL,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.fee_head_category (
+    id uuid NOT NULL,
+    company_id uuid NOT NULL,
+    name text NOT NULL,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.fee_heads (
+    id uuid NOT NULL,
+    company_id uuid NOT NULL,
+    name text NOT NULL,
+    code text NOT NULL,
+    description text,
+    base_amount numeric(10,2),
+    is_mandatory boolean,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    fee_head_category_id uuid
+);
+"
+"CREATE TABLE public.group (
+    id uuid NOT NULL,
+    group_name text NOT NULL,
+    status text,
+    company_id uuid,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.location (
+    id uuid NOT NULL,
+    location_name text,
+    description text,
+    capacity integer,
+    address text,
+    city_name text,
+    state_id uuid,
+    country_id uuid,
+    zip_code text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid,
+    status text
+);
+"
+"CREATE TABLE public.logs (
+    id uuid NOT NULL,
+    user_id uuid NOT NULL,
+    company_id uuid NOT NULL,
+    device_id text NOT NULL,
+    device_info text,
+    ip_address text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.meeting (
+    id uuid NOT NULL,
+    company_id uuid,
+    subject text,
+    start_date_time timestamp without time zone,
+    end_date_time timestamp without time zone,
+    location_id uuid,
+    reminder text,
+    description text,
+    parent_type text,
+    parent_type_id uuid,
+    assigned_to uuid,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.module (
+    id uuid NOT NULL,
+    module_name text NOT NULL,
+    code text,
+    status text,
+    created_by uuid,
+    created_at timestamp with time zone,
+    modified_by uuid,
+    modified_at timestamp with time zone,
+    company_id uuid
+);
+"
+"CREATE TABLE public.option (
+    id uuid NOT NULL,
+    option_code integer NOT NULL,
+    option_name text,
+    module_id uuid,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid,
+    status text
+);
+"
+"CREATE TABLE public.pay_receipt (
+    id uuid NOT NULL,
+    company_id uuid,
+    payment_id uuid,
+    learner_id uuid,
+    course_id uuid,
+    receipt_number text,
+    amount_paid numeric(10,2),
+    payment_mode text,
+    payment_date date,
+    generated_by uuid,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    fee_head_id uuid
+);
+"
+"CREATE TABLE public.payment_breakup (
+    id uuid NOT NULL,
+    company_id uuid NOT NULL,
+    admission_id uuid NOT NULL,
+    course_id uuid NOT NULL,
+    fee_plan_id uuid NOT NULL,
+    fee_cycle_code text,
+    fee_year integer,
+    fee_component text NOT NULL,
+    amount numeric(10,2) NOT NULL,
+    is_paid boolean,
+    paid_on date,
+    payment_mode text,
+    receipt_number text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.payment_log (
+    id uuid NOT NULL,
+    fee_breakup_id uuid,
+    paid_amount numeric(10,2) NOT NULL,
+    paid_on date NOT NULL,
+    payment_mode text,
+    receipt_number text,
+    created_by uuid,
+    created_at timestamp without time zone
+);
+"
+"CREATE TABLE public.payment_plan (
+    id uuid NOT NULL,
+    learner_id uuid NOT NULL,
+    course_id uuid NOT NULL,
+    start_date text NOT NULL,
+    total_amount numeric(10,2) NOT NULL,
+    discount numeric(10,2),
+    fine_amount numeric(10,2),
+    status text,
+    company_id uuid NOT NULL,
+    created_by uuid,
+    created_at timestamp with time zone NOT NULL,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    payment_frequency text,
+    net_amount numeric(10,2)
+);
+"
+"CREATE TABLE public.pricing_plan (
+    id uuid NOT NULL,
+    company_type text NOT NULL,
+    plan_name text NOT NULL,
+    billing_cycle text NOT NULL,
+    currency_id uuid,
+    amount numeric,
+    status text,
+    company_id uuid,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.question_options (
+    id uuid NOT NULL,
+    question_id uuid NOT NULL,
+    option_text text,
+    is_correct boolean,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    explanation text,
+    quiz_id uuid,
+    company_id uuid
+);
+"
+"CREATE TABLE public.quiz (
+    id uuid NOT NULL,
+    quiz_name text,
+    quiz_code text,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    course_id uuid,
+    company_id uuid,
+    quiz_type text,
+    exam_duration integer
+);
+"
+"CREATE TABLE public.quiz_questions (
+    id uuid NOT NULL,
+    quiz_id uuid,
+    question text,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid
+);
+"
+"CREATE TABLE public.quiz_results (
+    id uuid NOT NULL,
+    student_id uuid NOT NULL,
+    course_id uuid NOT NULL,
+    quiz_id uuid NOT NULL,
+    total_questions integer NOT NULL,
+    attempted_questions integer NOT NULL,
+    unattempted_questions integer NOT NULL,
+    correct_answers integer NOT NULL,
+    wrong_answers integer NOT NULL,
+    percentage numeric(5,2),
+    time_taken_seconds integer NOT NULL,
+    passed boolean NOT NULL,
+    attempt_timestamp timestamp with time zone,
+    created_by uuid,
+    created_at timestamp without time zone,
+    company_id uuid NOT NULL
+);
+"
+"CREATE TABLE public.referral (
+    id uuid NOT NULL,
+    company_id uuid NOT NULL,
+    referral_company_name text NOT NULL,
+    referral_date timestamp with time zone,
+    contact_person text NOT NULL,
+    mobile_no text NOT NULL,
+    email text NOT NULL,
+    address text,
+    product_interest text,
+    requirement text,
+    is_paid boolean NOT NULL,
+    status text NOT NULL,
+    referred_by uuid,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    amount_paid numeric(12,2),
+    received_amount numeric(12,2)
+);
+"
+"CREATE TABLE public.referral_payments (
+    id uuid NOT NULL,
+    referral_id uuid NOT NULL,
+    affiliate_id uuid NOT NULL,
+    amount numeric(10,2) NOT NULL,
+    payment_date timestamp without time zone,
+    payment_mode text,
+    remarks text,
+    company_id uuid
+);
+"
+"CREATE TABLE public.referral_status_history (
+    id uuid NOT NULL,
+    company_id uuid NOT NULL,
+    referral_id uuid NOT NULL,
+    old_status text,
+    new_status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.role (
+    id uuid NOT NULL,
+    role_name text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid,
+    status text,
+    type_id uuid
+);
+"
+"CREATE TABLE public.role_module_mapping (
+    id uuid NOT NULL,
+    company_id uuid,
+    module_id uuid,
+    role_id uuid,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.role_permission (
+    id uuid NOT NULL,
+    role_id uuid,
+    option_id uuid,
+    grant boolean,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid
+);
+"
+"CREATE TABLE public.site_config (
+    id uuid NOT NULL,
+    company_id uuid,
+    key text,
+    value text,
+    type text,
+    description text,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    business_config text
+);
+"
+"CREATE TABLE public.site_config_back (
+    id uuid,
+    company_id uuid,
+    key text,
+    value text,
+    type text,
+    description text,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    business_config text
+);
+"
+"CREATE TABLE public.state (
+    id uuid NOT NULL,
+    state_name text,
+    state_code text,
+    country_id uuid,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid,
+    status text
+);
+"
+"CREATE TABLE public.study_notes (
+    id uuid NOT NULL,
+    course_id uuid,
+    title text,
+    description text,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid
+);
+"
+"CREATE TABLE public.type (
+    id uuid NOT NULL,
+    type_name text NOT NULL,
+    status text,
+    company_id uuid,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone
+);
+"
+"CREATE TABLE public.user (
+    id uuid NOT NULL,
+    first_name text,
+    last_name text,
+    email text,
+    mobile_no text,
+    user_name text,
+    password text,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    role_id uuid,
+    image_url text,
+    code text,
+    company_id uuid,
+    affiliate_id uuid,
+    type text,
+    type_id uuid,
+    admission_id uuid
+);
+"
+"CREATE TABLE public.user_device_mapping (
+    id uuid NOT NULL,
+    user_id uuid,
+    device_id text,
+    company_id uuid,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    device_info text,
+    status text,
+    remarks text
+);
+"
+"CREATE TABLE public.user_permission (
+    id uuid NOT NULL,
+    user_id uuid,
+    option_id uuid,
+    grant boolean,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid
+);
+"
+"CREATE TABLE public.video_uploads (
+    id uuid NOT NULL,
+    course_id uuid,
+    title text,
+    video_source text,
+    description text,
+    tags text,
+    status text,
+    created_by uuid,
+    created_at timestamp without time zone,
+    modified_by uuid,
+    modified_at timestamp without time zone,
+    company_id uuid
+);
+"
